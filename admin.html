@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Admin Login</h2>
+  <input type="password" id="password" placeholder="Password">
+  <button class="present" onclick="login()">Login</button>
+</div>
+
+<script>
+function login() {
+  if (password.value === "admin123") {
+    localStorage.setItem("admin", "yes");
+    location.href = "manage.html";
+  } else {
+    alert("Wrong password");
+  }
+}
+</script>
+
+</body>
+</html>

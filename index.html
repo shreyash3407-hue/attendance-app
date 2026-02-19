@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="top-bar">
+  <div id="todayDate"></div>
+  <a href="admin.html" class="manage-btn" target="_blank">Manage</a>
+</div>
+
+<div class="container">
+  <h2 id="studentName"></h2>
+  <h3 id="rollNo"></h3>
+
+  <button class="present" onclick="mark('Present')">PRESENT</button>
+  <button class="absent" onclick="mark('Absent')">ABSENT</button>
+
+  <a href="summary.html" class="link">View Summary</a>
+</div>
+
+<script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Attendance App",
+  "short_name": "Attendance",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#141e30",
+  "theme_color": "#243b55"
+}
